@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matsya Labs</title>
+<meta name="description" content="Matsya Labs is Kameswar Malladi's personal software lab: small, carefully built tools for Indian families and civic life.">
+<meta property="og:title" content="Matsya Labs">
+<meta property="og:description" content="Small, carefully built software for Indian families and civic life.">
+<meta property="og:image" content="https://matsya-labs.github.io/assets/og.png">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111827" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="assets/matsya-avatar-dark.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="matsya.css">
+<style>
+  /* One column, generous air, system fonts. Colours come from matsya.css (light + dark). */
+  html { font-size: 17px; -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--ml-bg); color: var(--ml-text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Noto Sans Telugu", sans-serif;
+    line-height: 1.6;
+  }
+  main { max-width: 40rem; margin: 0 auto; padding: 3rem max(1.25rem, env(safe-area-inset-left)) 4rem max(1.25rem, env(safe-area-inset-right)); }
+  a { color: var(--ml-accent); text-decoration-thickness: 1px; text-underline-offset: 0.15em; }
+  a:hover { color: var(--ml-accent-hover); }
+  a:focus-visible { outline: 2px solid var(--ml-focus); outline-offset: 3px; border-radius: 2px; }
+
+  .lockup { width: min(100%, 22rem); height: auto; display: block; }
+  .lockup-mark { color: var(--ml-accent); }
+  .lockup-text { color: var(--ml-text); }
+
+  .hero { display: flex; flex-direction: column; gap: 1.25rem; margin-bottom: 3.5rem; }
+  .hero p { font-size: 1.25rem; margin: 0; max-width: 30em; text-wrap: balance; }
+
+  section { display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 3rem; }
+  h2 { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ml-text-muted); margin: 0; }
+  p { margin: 0; }
+  .story { color: var(--ml-text); max-width: 34em; }
+  .story .mark { width: 1.6em; height: 1.6em; vertical-align: -0.35em; color: var(--ml-accent); margin-right: 0.15em; }
+
+  .projects { display: flex; flex-direction: column; gap: 1rem; }
+  .project { border-top: 1px solid var(--ml-border); padding-top: 1rem; display: flex; flex-direction: column; gap: 0.4rem; }
+  .project h3 { margin: 0; font-size: 1.15rem; font-weight: 600; display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem; }
+  .native { color: var(--ml-accent); font-weight: 500; }
+  .meaning { font-weight: 400; color: var(--ml-text-muted); font-size: 0.9rem; }
+  .status { font-size: 0.9rem; color: var(--ml-text-muted); display: flex; align-items: center; gap: 0.45rem; }
+  .dot { width: 0.5rem; height: 0.5rem; border-radius: 50%; background: var(--ml-warn-solid); flex: none; }
+
+  footer { border-top: 1px solid var(--ml-border); padding-top: 1.25rem; font-size: 0.9rem; color: var(--ml-text-muted); display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; }
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <svg class="lockup" viewBox="0 0 359 100" role="img" aria-label="Matsya Labs"><g class="lockup-mark"><svg x="0" y="0" width="100" height="100" viewBox="0 0 100 100"><path d="M88 50 C74 26 48 26 34 50 C48 74 74 74 88 50 Z" fill="none" stroke="currentColor" stroke-width="7.5" stroke-linejoin="round"/><path d="M26 50 L8 30 L13 50 L8 70 Z" fill="currentColor"/><path d="M64 36 Q72 25 84 11 Q79 28 73 38 Z" fill="currentColor"/><circle cx="71" cy="46" r="4.5" fill="currentColor"/></svg></g><g class="lockup-text" fill="currentColor"><path transform="translate(112 63) scale(0.44)" d="M7.17 0.0V-70.3H16.8L45.25 -24.67H39.77L68.2 -70.3H77.82V0.0H64.25V-46.95L66.92 -46.22L47.1 -14.4H37.9L18.1 -46.22L20.75 -46.95V0.0Z M108.67 1.0Q102.07 1.0 96.80 -2.30Q91.54 -5.60 88.50 -11.27Q85.47 -16.95 85.47 -24.07Q85.47 -31.27 88.50 -36.96Q91.54 -42.65 96.80 -45.97Q102.07 -49.30 108.67 -49.30Q113.87 -49.30 117.97 -47.17Q122.07 -45.05 124.55 -41.32Q127.04 -37.6 127.22 -32.85V-15.45Q127.04 -10.70 124.59 -6.97Q122.14 -3.25 118.00 -1.12Q113.87 1.0 108.67 1.0ZM111.12 -11.10Q116.62 -11.10 119.99 -14.76Q123.37 -18.42 123.37 -24.15Q123.37 -28.0 121.84 -30.93Q120.32 -33.87 117.57 -35.53Q114.82 -37.2 111.14 -37.2Q107.54 -37.2 104.79 -35.53Q102.04 -33.87 100.45 -30.92Q98.87 -27.97 98.87 -24.15Q98.87 -20.32 100.44 -17.37Q102.02 -14.42 104.78 -12.76Q107.54 -11.10 111.12 -11.10ZM122.69 0.0V-12.97L124.79 -24.75L122.69 -36.42V-48.30H135.72V0.0Z M152.1 0.0V-68.35H165.25V0.0ZM140.85 -36.80V-48.30H176.5V-36.80Z M197.30 1.12Q193.15 1.12 189.23 0.03Q185.30 -1.05 181.99 -3.03Q178.68 -5.02 176.28 -7.80L184.10 -15.70Q186.57 -12.92 189.85 -11.48Q193.13 -10.05 197.13 -10.05Q200.32 -10.05 201.99 -10.98Q203.65 -11.92 203.65 -13.70Q203.65 -15.70 201.89 -16.77Q200.13 -17.85 197.35 -18.63Q194.57 -19.42 191.50 -20.33Q188.43 -21.25 185.64 -22.82Q182.85 -24.40 181.10 -27.16Q179.35 -29.92 179.35 -34.30Q179.35 -38.92 181.63 -42.31Q183.90 -45.7 188.07 -47.58Q192.25 -49.47 197.98 -49.47Q203.95 -49.47 208.81 -47.38Q213.68 -45.30 216.82 -41.12L208.98 -33.22Q206.78 -35.87 204.00 -37.08Q201.23 -38.30 198.10 -38.30Q195.15 -38.30 193.61 -37.41Q192.07 -36.52 192.07 -34.9Q192.07 -33.12 193.82 -32.12Q195.57 -31.12 198.35 -30.37Q201.13 -29.62 204.19 -28.66Q207.25 -27.70 210.03 -26.01Q212.80 -24.32 214.55 -21.52Q216.30 -18.72 216.30 -14.25Q216.30 -7.17 211.18 -3.02Q206.05 1.12 197.30 1.12Z M237.99 0.37 217.77 -48.30H232.04L245.39 -11.12H240.62L254.52 -48.30H268.84L247.29 0.37ZM224.59 20.25 239.34 -10.85 247.29 0.37 238.54 20.25Z M291.18 1.0Q284.58 1.0 279.31 -2.30Q274.05 -5.60 271.01 -11.27Q267.98 -16.95 267.98 -24.07Q267.98 -31.27 271.01 -36.96Q274.05 -42.65 279.31 -45.97Q284.58 -49.30 291.18 -49.30Q296.38 -49.30 300.48 -47.17Q304.58 -45.05 307.06 -41.32Q309.55 -37.6 309.73 -32.85V-15.45Q309.55 -10.70 307.10 -6.97Q304.65 -3.25 300.51 -1.12Q296.38 1.0 291.18 1.0ZM293.63 -11.10Q299.13 -11.10 302.50 -14.76Q305.88 -18.42 305.88 -24.15Q305.88 -28.0 304.35 -30.93Q302.83 -33.87 300.08 -35.53Q297.33 -37.2 293.65 -37.2Q290.05 -37.2 287.30 -35.53Q284.55 -33.87 282.96 -30.92Q281.38 -27.97 281.38 -24.15Q281.38 -20.32 282.95 -17.37Q284.53 -14.42 287.29 -12.76Q290.05 -11.10 293.63 -11.10ZM305.20 0.0V-12.97L307.30 -24.75L305.20 -36.42V-48.30H318.23V0.0Z"/><path transform="translate(265.90 63) scale(0.44)" d="M8.75 0.0V-68.8H16.1V0.0ZM13.60 0.0V-6.7H51.5V0.0Z M79.31 1.0Q72.66 1.0 67.36 -2.22Q62.06 -5.45 58.98 -10.97Q55.91 -16.5 55.91 -23.40Q55.91 -30.35 58.98 -35.90Q62.06 -41.45 67.33 -44.72Q72.61 -48.0 79.21 -48.0Q84.61 -48.0 88.86 -45.85Q93.11 -43.7 95.78 -39.85Q98.46 -36.0 99.01 -30.90V-16.15Q98.41 -11.05 95.75 -7.17Q93.11 -3.30 88.88 -1.15Q84.66 1.0 79.31 1.0ZM80.41 -5.65Q87.75 -5.65 92.18 -10.57Q96.61 -15.5 96.61 -23.45Q96.61 -28.8 94.58 -32.82Q92.56 -36.85 88.88 -39.1Q85.21 -41.35 80.31 -41.35Q75.31 -41.35 71.46 -39.05Q67.61 -36.75 65.38 -32.72Q63.16 -28.70 63.16 -23.5Q63.16 -18.3 65.38 -14.27Q67.61 -10.25 71.50 -7.95Q75.41 -5.65 80.41 -5.65ZM96.21 0.0V-12.60L97.61 -24.15L96.21 -35.5V-47.0H103.26V0.0Z M140.57 1.0Q135.22 1.0 130.89 -1.17Q126.57 -3.35 123.82 -7.22Q121.07 -11.10 120.47 -16.15V-30.90Q121.07 -36.05 123.87 -39.90Q126.67 -43.75 131.02 -45.87Q135.37 -48.0 140.57 -48.0Q147.12 -48.0 152.32 -44.75Q157.52 -41.5 160.54 -35.95Q163.57 -30.40 163.57 -23.40Q163.57 -16.5 160.57 -10.97Q157.57 -5.45 152.34 -2.22Q147.12 1.0 140.57 1.0ZM116.27 0.0V-70.8H123.32V-35.5L121.87 -24.15L123.32 -12.60V0.0ZM139.37 -5.65Q144.37 -5.65 148.17 -7.92Q151.97 -10.20 154.14 -14.25Q156.32 -18.3 156.32 -23.5Q156.32 -28.75 154.14 -32.77Q151.97 -36.80 148.19 -39.07Q144.42 -41.35 139.52 -41.35Q134.62 -41.35 130.87 -39.07Q127.12 -36.80 125.02 -32.77Q122.92 -28.75 122.92 -23.45Q122.92 -18.25 124.99 -14.22Q127.07 -10.20 130.79 -7.92Q134.52 -5.65 139.37 -5.65Z M188.08 1.0Q184.23 1.0 180.75 -0.05Q177.28 -1.1 174.43 -3.0Q171.58 -4.9 169.43 -7.5L173.98 -12.10Q176.73 -8.70 180.30 -7.05Q183.88 -5.4 188.23 -5.4Q192.93 -5.4 195.58 -7.17Q198.23 -8.95 198.23 -12.15Q198.23 -15.15 196.35 -16.85Q194.48 -18.55 191.50 -19.57Q188.53 -20.6 185.23 -21.55Q181.93 -22.5 178.95 -23.95Q175.98 -25.40 174.10 -27.97Q172.23 -30.55 172.23 -34.80Q172.23 -38.80 174.20 -41.75Q176.18 -44.7 179.80 -46.35Q183.43 -48.0 188.43 -48.0Q193.78 -48.0 198.05 -46.1Q202.33 -44.2 204.98 -40.5L200.43 -35.95Q198.38 -38.65 195.23 -40.12Q192.08 -41.6 188.13 -41.6Q183.68 -41.6 181.33 -39.85Q178.98 -38.1 178.98 -35.30Q178.98 -32.55 180.85 -31.00Q182.73 -29.45 185.70 -28.5Q188.68 -27.55 191.98 -26.6Q195.28 -25.65 198.25 -24.1Q201.23 -22.55 203.10 -19.9Q204.98 -17.25 204.98 -12.8Q204.98 -6.45 200.40 -2.72Q195.83 1.0 188.08 1.0Z"/></g></svg>
+    <p>A small personal lab for software made from India, for Indian families and civic life. Built with care for language, ownership and the long run.</p>
+  </header>
+
+  <section>
+    <h2>The name</h2>
+    <p class="story"><svg class="mark" viewBox="0 0 100 100" aria-hidden="true"><path d="M88 50 C74 26 48 26 34 50 C48 74 74 74 88 50 Z" fill="none" stroke="currentColor" stroke-width="7.5" stroke-linejoin="round"/><path d="M26 50 L8 30 L13 50 L8 70 Z" fill="currentColor"/><path d="M64 36 Q72 25 84 11 Q79 28 73 38 Z" fill="currentColor"/><circle cx="71" cy="46" r="4.5" fill="currentColor"/></svg>Matsya, the fish, is the first of Vishnu's avatars. Manu found it tiny in his cupped hands, and it outgrew every vessel he gave it, from a pot to a lake to the sea. When the great flood came, it carried Manu's boat to safety on the horn on its head, and with it the seeds of life and the knowledge of the Vedas. That is the ambition here: start small, keep growing, and carry what matters.</p>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <article class="project">
+        <h3><span class="native" lang="te">వాణి</span> Vaani <small class="meaning">“voice”</small></h3>
+        <p>A text-first, federated public square for Indian civic discourse. Speaks ActivityPub, so it talks to the wider Fediverse while Indian data stays on Indian servers. Verified identity instead of anonymity.</p>
+        <p class="status"><span class="dot" aria-hidden="true"></span>in development, private for now</p>
+      </article>
+      <article class="project">
+        <h3><span class="native" lang="te">వంశం</span> Vamsham <small class="meaning">“lineage”</small></h3>
+        <p>A private, bilingual family tree with a wiki page for every relative. Names and stories are kept per language, English and Telugu first, and every marriage is one click away from the other family's tree.</p>
+        <p class="status"><span class="dot" aria-hidden="true"></span>in development, private for now</p>
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    <span>Matsya Labs, by Kameswar Malladi</span>
+    <a href="https://github.com/matsya-labs">GitHub</a>
+  </footer>
+</main>
+</body>
+</html>
